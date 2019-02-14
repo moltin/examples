@@ -1,0 +1,8 @@
+node_modules
+localStorage
+dist
+vendor
+yarn-error.log
+.DS_Store
+*.log
+.env
