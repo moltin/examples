@@ -1,0 +1,65 @@
+{
+  "alias": "demo-all-integrations",
+  "version": 2,
+  "env": {
+    "TWILIO_ACCOUNT_SID": "@demo-twilio-account-sid",
+    "TWILIO_AUTH_TOKEN": "@demo-twilio-auth-token",
+    "TWILIO_FROM_NUMBER": "@demo-twilio-from-number",
+    "POSTMARK_KEY": "@demo-postmark-key",
+    "POSTMARK_FROM_ADDRESS": "@demo-postmark-from-address",
+    "POSTMARK_SHIPPED_TEMPLATE_ID": "@demo-postmark-shipped-template-id",
+    "POSTMARK_CONFIRMATION_TEMPLATE_ID": "@demo-postmark-confirmation-template-id",
+    "MOLTIN_CLIENT_ID": "@demo-moltin-client-id",
+    "MOLTIN_CLIENT_SECRET": "@demo-moltin-client-secret",
+    "MOLTIN_WEBHOOK_SECRET": "@demo-moltin-webhook-secret"
+  },
+  "builds": [
+    {
+      "src": "order-confirmation-email/*.js",
+      "use": "@now/node"
+    },
+    {
+      "src": "order-confirmation-sms/*.js",
+      "use": "@now/node"
+    },
+    {
+      "src": "shipping-confirmation-email/*.js",
+      "use": "@now/node"
+    },
+    {
+      "src": "shipping-confirmation-sms/*.js",
+      "use": "@now/node"
+    },
+    {
+      "src": "sync-catalog-to-algolia/*.js",
+      "use": "@now/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/order-confirmation-email",
+      "dest": "/order-confirmation-email",
+      "methods": ["POST"]
+    },
+    {
+      "src": "/order-confirmation-sms",
+      "dest": "/order-confirmation-sms",
+      "methods": ["POST"]
+    },
+    {
+      "src": "/shipping-confirmation-email",
+      "dest": "/shipping-confirmation-email",
+      "methods": ["POST"]
+    },
+    {
+      "src": "/shipping-confirmation-sms",
+      "dest": "/shipping-confirmation-sms",
+      "methods": ["POST"]
+    },
+    {
+      "src": "/sync-catalog-to-algolia",
+      "dest": "/sync-catalog-to-algolia",
+      "methods": ["POST"]
+    }
+  ]
+}

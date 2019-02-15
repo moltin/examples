@@ -12,7 +12,6 @@ Examples in this repo are designed to contain the least amount of code to demons
 | --------------------------------------------------------------- | ----------------- | ----------------------------------------------------------------- |
 | [Order Confirmation via Email](/order-confirmation-email)       | `order.paid`      | Order confirmation email with Postmark.                           |
 | [Order Confirmation via SMS](/order-confirmation-sms)           | `order.paid`      | Order confirmation SMS via Twilio.                                |
-| [Order Confirmation via Slack](/node-order-confirmation-slack)  | `order.paid`      | Store owner Slack notification for new orders.                    |
 | [Shipping Confirmation via Email](/shipping-confirmation-email) | `order.fulfilled` | Shipping confirmation email with SendGrid.                        |
 | [Shipping Confirmation via SMS](/shipping-confirmation-sms)     | `order.fulfilled` | Shipping confirmation SMS via Mailgun.                            |
 | [Refund Confirmation via Email](/refund-confirmation-email)     | `order.refunded`  | Refund confirmation email with Postmark.                          |
