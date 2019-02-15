@@ -19,7 +19,7 @@ git clone git@github.com:moltin/integration-examples.git
 Install dependencies with Yarn
 
 ```bash
-cd integration-examples/shipping-confirmation-email
+cd integration-examples/short-order-id
 yarn
 ```
 
@@ -43,7 +43,7 @@ Save this Field
 
 ### 3. Configure your ENV variables
 
-You will want to create an `.env` inside the directory `/order-confirmation-email` containing all the keys for the below:
+You will want to create an `.env` inside the directory `/short-order-id` containing all the keys for the below:
 
 ```shell
 MOLTIN_CLIENT_ID=

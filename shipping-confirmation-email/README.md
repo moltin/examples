@@ -59,7 +59,7 @@ Next you will need a Server API token from the **Credentials** tab.
 
 ### 3. Configure your ENV variables
 
-You will want to create an `.env` inside the directory `/order-confirmation-email` containing all the keys for the below:
+You will want to create an `.env` inside the directory `/shipping-confirmation-email` containing all the keys for the below:
 
 ```shell
 POSTMARK_API_KEY=
