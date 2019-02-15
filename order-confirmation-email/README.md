@@ -54,7 +54,7 @@ This will expose PORT `3000` to the outside world. Make a note of the `http` URL
 
 ### 3. Create a new Moltin integration
 
-You must now tell Moltin the ngrok URL above. Head to the [Moltin Dashboard](), login and go to `Settings > Integrations` and click `Create`.
+You must now tell Moltin the ngrok URL above. Head to the [Moltin Dashboard](https://dashboard.moltin.com/app/settings/integrations), login and go to `Settings > Integrations` and click `Create`.
 
 Enter a name and description for your Integration. We recommend you prefix the name with `DEVELOPMENT:`.
 
