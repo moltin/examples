@@ -83,6 +83,6 @@ Next, enter the `URL` and `Secret Key` that match those inside `.env`.
 
 Now finally you'll want to configure when this webhook will be invoked, in this example check the `Fulfilled` box.
 
-![Observes selection](https://user-images.githubusercontent.com/950181/52848579-02062500-3107-11e9-94b9-7e974eacb550.png)
+![Observes selection](https://user-images.githubusercontent.com/950181/52851227-76dc5d80-310d-11e9-9dff-70b7daaf21e8.png)
 
 That's it! Click Save
