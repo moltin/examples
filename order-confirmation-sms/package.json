@@ -10,6 +10,6 @@
     "twilio": "^3.28.0"
   },
   "devDependencies": {
-    "micro-dev": "^3.0.0"
+    "micro-dev": "3.0.0"
   }
 }
