@@ -1,0 +1,16 @@
+{
+  "name": "demo-sync-catalog-to-algolia",
+  "alias": "moltin-demo-sync-catalog-to-algolia.now.sh",
+  "version": 2,
+  "env": {
+    "ALGOLIA_APP_ID": "@demo-algolia-app-id",
+    "ALGOLIA_API_KEY": "@demo-algolia-api-key",
+    "MOLTIN_WEBHOOK_SECRET": "@demo-moltin-webhook-secret"
+  },
+  "builds": [
+    {
+      "src": "*.js",
+      "use": "@now/node"
+    }
+  ]
+}
