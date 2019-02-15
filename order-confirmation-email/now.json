@@ -1,0 +1,17 @@
+{
+  "name": "demo-order-confirmation-email",
+  "alias": "moltin-demo-order-confirmation-email.now.sh",
+  "version": 2,
+  "env": {
+    "POSTMARK_API_KEY": "@demo-postmark-api-key",
+    "MOLTIN_WEBHOOK_SECRET": "@demo-moltin-webhook-secret",
+    "POSTMARK_FROM_ADDRESS": "@demo-postmark-from-address",
+    "POSTMARK_CONFIRMATION_TEMPLATE_ID": "@demo-postmark-confirmation-template-id"
+  },
+  "builds": [
+    {
+      "src": "*.js",
+      "use": "@now/node"
+    }
+  ]
+}

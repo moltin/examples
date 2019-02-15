@@ -4,7 +4,9 @@ You'll find here various [webhook](https://docs.moltin.com/advanced/events) exam
 
 ## Examples
 
-Examples in this repo are designed to contain the least amount of code to demonstrate functionality. **They are not to be treated as production-ready.**
+Examples in this repo are designed to contain the least amount of code to demonstrate functionality.
+
+**They are not to be treated as production-ready.**
 
 | Demo                                                            | Webhook           | Description                                                       |
 | --------------------------------------------------------------- | ----------------- | ----------------------------------------------------------------- |
