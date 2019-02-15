@@ -31,6 +31,10 @@
       "use": "@now/node"
     },
     {
+      "src": "short-order-id/*.js",
+      "use": "@now/node"
+    },
+    {
       "src": "sync-catalog-to-algolia/*.js",
       "use": "@now/node"
     }
@@ -54,6 +58,11 @@
     {
       "src": "/shipping-confirmation-sms",
       "dest": "/shipping-confirmation-sms",
+      "methods": ["POST"]
+    },
+    {
+      "src": "/short-order-id",
+      "dest": "/short-order-id",
       "methods": ["POST"]
     },
     {
