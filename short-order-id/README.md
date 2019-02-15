@@ -1,6 +1,6 @@
-# Shipping Confirmation Email
+# Short Order ID
 
-This example demonstrates how you can send shipping confirmation emails via Postmark using Moltin webhooks.
+This example demonstrates how you can create short order IDs using Moltin webhooks.
 
 ## How to use locally
 
