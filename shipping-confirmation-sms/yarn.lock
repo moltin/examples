@@ -1339,7 +1339,7 @@ micro-cors@^0.1.1:
   resolved "https://registry.yarnpkg.com/micro-cors/-/micro-cors-0.1.1.tgz#af7a480182c114ffd1ada84ad9dffc52bb4f4054"
   integrity sha512-6WqIahA5sbQR1Gjexp1VuWGFDKbZZleJb/gy1khNGk18a6iN1FdTcr3Q8twaxkV5H94RjxIBjirYbWCehpMBFw==
 
-micro-dev@^3.0.0:
+micro-dev@3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/micro-dev/-/micro-dev-3.0.0.tgz#cea7ef2b4318765b74004e98ec92ac7e12fcff37"
   integrity sha512-hxI93KdT7Y8utmVn3NsXqMEKOQj0RpHiY1+PW8rtbiDyd3e/D6NN7OEdG8R0uSFI3GuJbkYN76Z2QTZafyfN/w==
