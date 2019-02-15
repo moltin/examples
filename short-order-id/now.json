@@ -1,0 +1,16 @@
+{
+  "name": "demo-short-order-id",
+  "alias": "moltin-demo-short-order-id.now.sh",
+  "version": 2,
+  "env": {
+    "MOLTIN_CLIENT_ID": "@demo-moltin-client-id",
+    "MOLTIN_CLIENT_SECRET": "@demo-moltin-client-secret",
+    "MOLTIN_WEBHOOK_SECRET": "@demo-moltin-webhook-secret"
+  },
+  "builds": [
+    {
+      "src": "*.js",
+      "use": "@now/node"
+    }
+  ]
+}

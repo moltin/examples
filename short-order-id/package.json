@@ -1,0 +1,15 @@
+{
+  "name": "short-order-id",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "micro-dev": "^3.0.0"
+  },
+  "dependencies": {
+    "@moltin/request": "^1.4.3",
+    "cuid": "^2.1.6",
+    "micro": "^9.3.3",
+    "micro-cors": "^0.1.1"
+  }
+}

@@ -23,49 +23,32 @@ cd integration-examples/shipping-confirmation-email
 yarn
 ```
 
-### 2. Configure Postmark
+### 2. Configure Flows
 
-In this example we will use [Postmark](https://postmarkapp.com) to send our emails. They also take care of hosting the email template.
+Moltin provides you the ability to extend core resources with the Flows feature. Go to the [Moltin Dashboard]() and navigate to `Settings > Flows`.
 
-Once you signed up to Postmark, create a new server and add a new template with the following code:
+Here you will want to create a new Flow (or edit if it already exists) for extending Products. Give it a name and description you will recognise, but \*make sure\*\* the `slug` is set to `products`.
 
-```html
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title></title>
-    <style type="text/css"></style>
-  </head>
-  <body>
-    <p>
-      Hey, {{customer_name}}! Your order {{order_ref}} has been shipped to
-      {{shipping_line_1}}, {{shipping_postcode}}
-    </p>
-  </body>
-</html>
-```
+![Create New Flow](https://user-images.githubusercontent.com/950181/52850827-65468600-310c-11e9-9caa-c82a0175acd9.png)
 
-This template is just an example, but anything you provide inside the `templateModel` object you will have access to inside this template.
+Next you will want to create a new Field for the Flow you just created.
 
-Once you've saved the template, you will need to make a note the ID of the template:
+![Create New Field Button](https://user-images.githubusercontent.com/950181/52850885-96bf5180-310c-11e9-93d0-85821730d0d9.png)
 
-![Postmark template ID](https://user-images.githubusercontent.com/950181/52849390-cff5c280-3108-11e9-8412-b8093a5e526f.png)
+Give the new Field a name and description you will recognise. **Make sure** the `slug` is set to `short_id` as this is what the serverless function expects.
 
-Next you will need a Server API token from the **Credentials** tab.
+![Create New Field Form](https://user-images.githubusercontent.com/950181/52850990-dbe38380-310c-11e9-95b1-dc07b753a3a9.png)
 
-![Postmark API tokens](https://user-images.githubusercontent.com/950181/52848170-f7975b80-3105-11e9-968b-d1555a807b46.png)
+Save this Field
 
 ### 3. Configure your ENV variables
 
 You will want to create an `.env` inside the directory `/order-confirmation-email` containing all the keys for the below:
 
 ```shell
-POSTMARK_API_KEY=
+MOLTIN_CLIENT_ID=
+MOLTIN_CLIENT_SECRET=
 MOLTIN_WEBHOOK_SECRET=
-POSTMARK_FROM_ADDRESS=
-POSTMARK_SHIPPED_TEMPLATE_ID=
 ```
 
 `MOLTIN_WEBHOOK_SECRET` can be anything you want.

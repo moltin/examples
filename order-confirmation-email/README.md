@@ -69,11 +69,11 @@ This template is just an example, but anything you provide inside the `templateM
 
 Once you've saved the template, you will need to make a note the ID of the template:
 
-![screenshot 2019-02-15 at 09 39 34](https://user-images.githubusercontent.com/950181/52848022-a2f3e080-3105-11e9-9cf2-564d0e6b7a7d.png)
+![Postmark template ID](https://user-images.githubusercontent.com/950181/52849390-cff5c280-3108-11e9-8412-b8093a5e526f.png)
 
 Next you will need a Server API token from the **Credentials** tab.
 
-![screenshot 2019-02-15 at 09 41 04](https://user-images.githubusercontent.com/950181/52848170-f7975b80-3105-11e9-968b-d1555a807b46.png)
+![Postmark API tokens](https://user-images.githubusercontent.com/950181/52848170-f7975b80-3105-11e9-968b-d1555a807b46.png)
 
 ### 3. Configure your ENV variables
 
@@ -85,6 +85,8 @@ MOLTIN_WEBHOOK_SECRET=
 POSTMARK_FROM_ADDRESS=
 POSTMARK_CONFIRMATION_TEMPLATE_ID=
 ```
+
+`MOLTIN_WEBHOOK_SECRET` can be anything you want.
 
 ### 4. Start the server and ngrok
 
@@ -112,7 +114,7 @@ Enter a name and description for your Integration. We recommend you prefix the n
 
 Next, enter the `URL` and `Secret Key` that match those inside `.env`.
 
-![URL and Secret Key](https://user-images.githubusercontent.com/950181/52849390-cff5c280-3108-11e9-8412-b8093a5e526f.png)
+![URL and Secret Key](https://user-images.githubusercontent.com/950181/52846929-ca957980-3102-11e9-9a20-23b8139767ee.png)
 
 Now finally you'll want to configure when this webhook will be invoked, in this example check the `Paid/Captured` box.
 
