@@ -112,10 +112,10 @@ Enter a name and description for your Integration. We recommend you prefix the n
 
 Next, enter the `URL` and `Secret Key` that match those inside `.env`.
 
-![screenshot 2019-02-15 at 09 17 12](https://user-images.githubusercontent.com/950181/52846929-ca957980-3102-11e9-9a20-23b8139767ee.png)
+![URL and Secret Key](https://user-images.githubusercontent.com/950181/52849390-cff5c280-3108-11e9-8412-b8093a5e526f.png)
 
 Now finally you'll want to configure when this webhook will be invoked, in this example check the `Paid/Captured` box.
 
-![screenshot 2019-02-15 at 09 18 10](https://user-images.githubusercontent.com/950181/52847107-3a0b6900-3103-11e9-80c7-f5c4bc4b0b53.png)
+![Observes selection](https://user-images.githubusercontent.com/950181/52847107-3a0b6900-3103-11e9-80c7-f5c4bc4b0b53.png)
 
 That's it! Click Save
