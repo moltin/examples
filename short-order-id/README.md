@@ -25,9 +25,9 @@ yarn
 
 ### 2. Configure Flows
 
-Moltin provides you the ability to extend core resources with the Flows feature. Go to the [Moltin Dashboard]() and navigate to `Settings > Flows`.
+Moltin provides you the ability to extend core resources with the Flows feature. Go to the [Moltin Dashboard](https://dashboard.moltin.com/app/settings/flows) and navigate to `Settings > Flows`.
 
-Here you will want to create a new Flow (or edit if it already exists) for extending Products. Give it a name and description you will recognise, but \*make sure\*\* the `slug` is set to `products`.
+Here you will want to create a new Flow (or edit if it already exists) for extending Products. Give it a name and description you will recognise, but **make sure** the `slug` is set to `products`.
 
 ![Create New Flow](https://user-images.githubusercontent.com/950181/52850827-65468600-310c-11e9-9caa-c82a0175acd9.png)
 
