@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "micro-dev",
+    "start": "micro"
+  },
+  "devDependencies": {
+    "micro-dev": "^3.0.0"
+  },
+  "dependencies": {
+    "micro": "^9.3.3",
+    "micro-cors": "^0.1.1",
+    "postmark": "^2.2.4"
+  }
+}
