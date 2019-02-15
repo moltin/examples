@@ -81,3 +81,7 @@ Now finally you'll want to configure when this webhook will be invoked, in this 
 ![Observes selection](https://user-images.githubusercontent.com/950181/52847107-3a0b6900-3103-11e9-80c7-f5c4bc4b0b53.png)
 
 That's it! Click Save
+
+### 6. How to use
+
+Now that our integration is setup and configured, you will need to update the Order after Checkout to include the customers phone number.
