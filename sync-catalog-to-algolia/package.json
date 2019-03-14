@@ -5,7 +5,7 @@
     "start": "micro"
   },
   "dependencies": {
-    "algoliasearch": "3.32.0",
+    "algoliasearch": "3.32.1",
     "micro": "9.3.3",
     "micro-cors": "0.1.1"
   },
