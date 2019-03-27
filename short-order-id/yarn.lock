@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@moltin/request@1.5.2":
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/@moltin/request/-/request-1.5.2.tgz#1ebdbf22ecb9b783f7af1f0c3001934fe099054b"
-  integrity sha512-TmIrjZgjQZAxQ9u21fQE+IqgAo0s74qMN1TAhkRiPn5P4UvIqGLyF1B+zracy/Qcr9p9VEdBZApVFX7i8fWckA==
+"@moltin/request@1.5.3":
+  version "1.5.3"
+  resolved "https://registry.yarnpkg.com/@moltin/request/-/request-1.5.3.tgz#9d715b9b73f1e962d34acbee82c0cd87aa4284f8"
+  integrity sha512-lbN+zabx8Qilm3AnHjL+vpgKgaNFsV04lL0UVkINhc8HjIn5agNBIIIAKZy1v/omiNRSa2g6DHHWq3vN73vJzA==
   dependencies:
     cross-fetch "3.0.2"
 
