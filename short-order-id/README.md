@@ -81,7 +81,7 @@ Next, enter the `URL` and `Secret Key` that match those inside `.env`.
 
 ![URL and Secret Key](https://user-images.githubusercontent.com/950181/52846929-ca957980-3102-11e9-9a20-23b8139767ee.png)
 
-Now finally you'll want to configure when this webhook will be invoked, in this example check the `Fulfilled` box.
+Now finally you'll want to configure when this webhook will be invoked, in this example check the `Created` box.
 
 ![Observes selection](https://user-images.githubusercontent.com/950181/52851227-76dc5d80-310d-11e9-9dff-70b7daaf21e8.png)
 
