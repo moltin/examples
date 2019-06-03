@@ -1,0 +1,40 @@
+service: shipstation-moltin
+
+plugins:
+  - serverless-plugin-typescript
+  - serverless-offline
+  - serverless-mocha-plugin
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  environment:
+    MOLTIN_CLIENT_ID:
+    MOLTIN_CLIENT_SECRET:
+    SHIPSTATION_KEY:
+    SHIPSTATION_TOKEN:
+
+package:
+  include:
+    - ./handler.js
+    - ./utils/transforms.js
+    - ./utils/moltin.js
+    - ./utils/shipstation.js
+    - ./models.js
+
+functions:
+  newShipstationShipment:
+    handler: handler.newShipstationShipment
+
+    events:
+      - http:
+          path: shipment/new
+          method: post
+
+  newMoltinOrder:
+    handler: handler.newMoltinOrder
+
+    events:
+      - http:
+          path: orders/new
+          method: post
