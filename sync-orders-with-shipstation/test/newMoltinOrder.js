@@ -9,11 +9,11 @@ const { expect } = mochaPlugin.chai
 const wrapped = mochaPlugin.getWrapper('newMoltinOrder', '/handler.js', 'newMoltinOrder')
 
 describe('newMoltinOrder', () => {
-  before((done) => {
-    done()
-  })
+    before((done) => {
+        done()
+    })
 
-  it('implement tests here', () => wrapped.run({}).then((response) => {
-    expect(response).to.not.be.empty
-  }))
+    it('implement tests here', () => wrapped.run({}).then((response) => {
+        expect(response).to.not.be.empty
+    }))
 })
