@@ -1,12 +1,15 @@
 {
+  "types": "types.d.ts",
   "dependencies": {
-    "@moltin/request": "^1.6.1",
+    "@moltin/request": "1.6.2",
+    "aws-lambda": "^0.1.2",
     "request": "^2.88.0",
     "typescript": "^3.4.5"
   },
   "devDependencies": {
-    "@moltin/eslint-config": "^1.0.0",
+    "@types/aws-lambda": "^8.10.26",
     "@typescript-eslint/eslint-plugin": "^1.9.0",
+    "eslint": "^5.16.0",
     "mocha": "^6.1.4",
     "serverless-mocha-plugin": "^1.10.0",
     "serverless-offline": "^4.10.3",
