@@ -6,6 +6,7 @@
   },
   "devDependencies": {
     "@moltin/eslint-config": "^1.0.0",
+    "@typescript-eslint/eslint-plugin": "^1.9.0",
     "mocha": "^6.1.4",
     "serverless-mocha-plugin": "^1.10.0",
     "serverless-offline": "^4.10.3",
