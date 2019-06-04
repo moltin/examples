@@ -4,8 +4,8 @@ const buff = Buffer.from(userpass)
 const base64auth = buff.toString('base64')
 const request = require('request')
 
-export const createShipstationOrder = (requestBody): Promise<any> => {
-    return new Promise((resolve, reject): any => {
+export const createShipstationOrder = (requestBody): Promise<string> => {
+    return new Promise((resolve, reject): void => {
   
         const options = {
             uri: 'https://ssapi.shipstation.com/orders/createorder',
@@ -14,7 +14,7 @@ export const createShipstationOrder = (requestBody): Promise<any> => {
             json: requestBody,
         }
 
-        request(options, (error, response, responseBody): any => {
+        request(options, (error, response, responseBody) => {
             if (error) {
                 reject(error)
             }
@@ -22,7 +22,6 @@ export const createShipstationOrder = (requestBody): Promise<any> => {
             if(response.statusCode !== 200 || 201) {
                 reject(responseBody)
             }
-
             resolve(responseBody)
         })
 

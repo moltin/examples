@@ -11,7 +11,7 @@ import {
 
 import * as models from '../models'
 
-export const transformLineItems = (items): Function => (shipstationItemModel): Promise<ShipstationLineItem[]> => {
+export const transformLineItems = (items, shipstationItemModel): Promise<ShipstationLineItem[]> => {
     const lines: any[] = []
 
     return new Promise((resolve, reject): any => {
@@ -36,7 +36,7 @@ export const transformLineItems = (items): Function => (shipstationItemModel): P
     })
 }
 
-export const transformShippingAddress = (moltinShippingAddress): Function => (shipstationShippingAddress): ShipstationShippingAddress => {
+export const transformShippingAddress = (moltinShippingAddress, shipstationShippingAddress): ShipstationShippingAddress => {
     const newshipstationShippingAddress = Object.assign({}, shipstationShippingAddress)
     const joinedName = moltinShippingAddress.first_name.concat(' ', moltinShippingAddress.last_name)
 
@@ -53,7 +53,7 @@ export const transformShippingAddress = (moltinShippingAddress): Function => (sh
     return newshipstationShippingAddress
 }
 
-export const transformBillingAddress = (moltinBillingAddress): Function => (shipstationBillingAddress): ShipstationBillingAddress  => {
+export const transformBillingAddress = (moltinBillingAddress, shipstationBillingAddress): ShipstationBillingAddress  => {
     const newshipstationBillingAddress = Object.assign({}, shipstationBillingAddress)
     const joinedName = moltinBillingAddress.first_name.concat(' ', moltinBillingAddress.last_name)
 
@@ -68,7 +68,7 @@ export const transformBillingAddress = (moltinBillingAddress): Function => (ship
     return newshipstationBillingAddress
 }
 
-export const buildOrderValues = (moltinOrder): Function => (shipstationOrderBody): Promise<ShipstationOrderValues> => {
+export const buildOrderValues = (moltinOrder, shipstationOrderBody): Promise<ShipstationOrderValues> => {
     return new Promise(
         (resolve, reject): any => {
             try {
@@ -90,12 +90,12 @@ export const buildOrderValues = (moltinOrder): Function => (shipstationOrderBody
     )
 }
 
-export const buildOrderObjects = (lineItems): Function => (shippingAddress): Function => async (billingAddress): Promise<ShipstationOrderObjects> => {
+export const buildOrderObjects = async (lineItems, shippingAddress, billingAddress): Promise<ShipstationOrderObjects> => {
     let newOrderObjects: any = Object.assign({}, models.orderObjects)
 
-    const transformedLines: ShipstationLineItem[]  = await transformLineItems(lineItems)(models.orderItemModel)
-    const transformedShipping: ShipstationShippingAddress = transformShippingAddress(shippingAddress)(models.billingAddressModel)
-    const transformedBilling: ShipstationBillingAddress = transformBillingAddress(billingAddress)(models.billingAddressModel)
+    const transformedLines: ShipstationLineItem[]  = await transformLineItems(lineItems, models.orderItemModel)
+    const transformedShipping: ShipstationShippingAddress = transformShippingAddress(shippingAddress, models.billingAddressModel)
+    const transformedBilling: ShipstationBillingAddress = transformBillingAddress(billingAddress, models.billingAddressModel)
 
     newOrderObjects.billTo = transformedBilling
     newOrderObjects.shipTo = transformedShipping
@@ -103,6 +103,6 @@ export const buildOrderObjects = (lineItems): Function => (shippingAddress): Fun
     return newOrderObjects
 }
 
-export const buildFullOrder = (orderObjects): Function => (orderValues): ShipstationFullOrder => {
+export const buildFullOrder = (orderObjects, orderValues): ShipstationFullOrder => {
     return {...orderObjects, ...orderValues }
 }
