@@ -1,17 +1,24 @@
 import 'source-map-support/register'
-const { createClient } = require('@moltin/request')
+import { createClient } from '@moltin/request'
 
 const client = new createClient({
-  client_id: process.env.MOLTIN_CLIENT_ID,
-  client_secret: process.env.MOLTIN_CLIENT_SECRET,
+    client_id: process.env.MOLTIN_CLIENT_ID as string,
+    client_secret: process.env.MOLTIN_CLIENT_SECRET as string
 })
 
-module.exports.markOrderAsShipped = id => new Promise((resolve, reject) => {
-  client.put(`orders/${id}`, {
-    type: 'order',
-    id,
-    shipping: 'fulfilled',
-  })
-    .then(result => resolve(result))
-    .catch(e => reject(e))
+export const markOrderAsShipped = (id): Promise<any> => new Promise((resolve, reject): any => {
+    client.put(`orders/${id}`, {
+        type: 'order',
+        id,
+        shipping: 'fulfilled',
+    })
+        .then((result): any => {
+            console.log(result)
+            resolve(result)
+        })
+   
+        .catch((e): any => {
+            console.log(e)
+            reject(e)
+        })
 })
