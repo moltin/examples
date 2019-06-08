@@ -2,12 +2,12 @@
 # yarn lockfile v1
 
 
-"@moltin/request@1.6.2":
-  version "1.6.2"
-  resolved "https://registry.yarnpkg.com/@moltin/request/-/request-1.6.2.tgz#080c5726d7c78b9cfdc5a36b420c96eaccdbb1db"
-  integrity sha512-BFX6SgBjH3WlM+zo8+RgDYbkxCl3uAjqSDFE3Xh0gRpJ0KZeuLN4mR319z3OCRh2k1L83NfHwwH9GLKM/3ruAg==
+"@moltin/request@2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@moltin/request/-/request-2.0.1.tgz#8643f0cb1018092c2fa91721bd02d22a484cdbf5"
+  integrity sha512-i4VG2+hWn+sAZvTP18SfTucawLMHGqEPZ4A+BGMSo8BYClM1x9DMulTX7bx03MsZoMJsADnGFfQkjHf6kMXExA==
   dependencies:
-    cross-fetch "3.0.3"
+    cross-fetch "3.0.4"
 
 abbrev@1:
   version "1.1.1"
@@ -328,10 +328,10 @@ core-util-is@~1.0.0:
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
   integrity sha1-tf1UIgqivFq1eqtxQMlAdUUDwac=
 
-cross-fetch@3.0.3:
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/cross-fetch/-/cross-fetch-3.0.3.tgz#b988beab275939cb77ad4e362c873f7fa8a221a5"
-  integrity sha512-mplYkc4CopHu+AdHK8wxjJcPskUxp5CvPTdtDij3MUgVNBa0xOb9CQqbbn1zO23qISM4WLxIBociyEVQL7WQAg==
+cross-fetch@3.0.4:
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/cross-fetch/-/cross-fetch-3.0.4.tgz#7bef7020207e684a7638ef5f2f698e24d9eb283c"
+  integrity sha512-MSHgpjQqgbT/94D4CyADeNoYh52zMkCX4pcJvPP5WqPsLFMKjr2TCMg381ox5qI0ii2dPwaLx/00477knXqXVw==
   dependencies:
     node-fetch "2.6.0"
     whatwg-fetch "3.0.0"
