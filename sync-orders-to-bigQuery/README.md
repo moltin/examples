@@ -24,7 +24,7 @@
 
 ## ⛽️ Usage
 
-There is a single handler function in this repository. It's called `updateOrders` and is found in `index.js`. It takes no arguements, and will push new and updated orders within the last day from Moltin to BigQuery. It will delete any orders already in BigQuery that might cause duplicates after the new batch is pushed.
+There is a single handler function in this repository. It's called `updateOrders` and is found in `index.js`. It takes no arguments, and will push new and updated orders within the last day from Moltin to BigQuery. It will delete any orders already in BigQuery that might cause duplicates after the new batch is pushed.
 
 ## ❤️ Contributing
 
