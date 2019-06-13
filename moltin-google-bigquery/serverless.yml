@@ -1,0 +1,44 @@
+service: moltin-bigquery-sync
+
+provider:
+  name: google
+  stage: dev
+  runtime: nodejs8
+  region: us-central1
+  project: 
+  credentials: ./.gcloud/google.json
+  timeout: 15s
+
+plugins:
+  - serverless-google-cloudfunctions
+
+package:
+  include:
+    - bq-helper.js
+    - handler.js
+    - aws-helper.js
+    - google-helper.js
+
+  exclude:
+    - .git/**
+    - node_modules/**
+    - .gitignore
+
+functions:
+  updateOrders:
+    handler: updateOrders
+    description: Sends orders to Google BigQuery
+    environment:
+      MOLTIN_CLIENT_ID: 
+      MOLTIN_CLIENT_SECRET: 
+      ORDERS_DATASET: 
+      ORDERS_TABLE: 
+      ORDER_ITEMS_TABLE: 
+      GOOGLE_APPLICATION_CREDENTIALS: './.gcloud/google.json'
+      GOOGLE_LOCATION_ID: 
+      GOOGLE_KEYRING_ID:
+      GOOGLE_KEY_ID: 
+      GOOGLE_PROJECT_ID: 
+
+    events:
+      - http: foo
