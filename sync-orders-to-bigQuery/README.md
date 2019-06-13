@@ -31,11 +31,7 @@ There is a single handler function in this repository. It's called `updateOrders
 We love community contributions. Here's a quick guide if you want to submit a pull request:
 
 1.  Fork the repository
-2.  Add a test for your change (it should fail)
-3.  Make the tests pass
-4.  Commit your changes (see note below)
-5.  Submit your PR with a brief description explaining your changes
-
-> **Note:** Commits should adhere to the [Angular commit conventions](https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md#-git-commit-guidelines).
+2.  Commit your changes
+3.  Submit your PR with a brief description explaining your changes
 
 Make sure you have [Prettier](https://prettier.io) installed for your editor with ESLint integration enabled to work with [Moltins ESLint configuration](https://www.npmjs.com/package/@moltin/eslint-config)
