@@ -12,9 +12,9 @@ import {
 import * as models from '../models'
 
 export const transformLineItems = (items, shipstationItemModel): Promise<ShipstationLineItem[]> => {
-    const lines: any[] = []
+    const lines: ShipstationLineItem[] = []
 
-    return new Promise((resolve, reject): any => {
+    return new Promise<ShipstationLineItem[]>((resolve, reject) => {
         try {
             for (let i = 0; i < items.length; i += 1) {
                 const newShipstationItemModel = Object.assign({}, shipstationItemModel)
@@ -69,8 +69,8 @@ export const transformBillingAddress = (moltinBillingAddress, shipstationBilling
 }
 
 export const buildOrderValues = (moltinOrder, shipstationOrderBody): Promise<ShipstationOrderValues> => {
-    return new Promise(
-        (resolve, reject): any => {
+    return new Promise<ShipstationOrderValues>(
+        (resolve, reject) => {
             try {
                 const newShipstationOrderBody = Object.assign({}, shipstationOrderBody)
                 newShipstationOrderBody.orderNumber = moltinOrder.id
@@ -91,7 +91,7 @@ export const buildOrderValues = (moltinOrder, shipstationOrderBody): Promise<Shi
 }
 
 export const buildOrderObjects = async (lineItems, shippingAddress, billingAddress): Promise<ShipstationOrderObjects> => {
-    let newOrderObjects: any = Object.assign({}, models.orderObjects)
+    let newOrderObjects: EmptyShipstationOrderObjects = Object.assign({}, models.orderObjects)
 
     const transformedLines: ShipstationLineItem[]  = await transformLineItems(lineItems, models.orderItemModel)
     const transformedShipping: ShipstationShippingAddress = transformShippingAddress(shippingAddress, models.billingAddressModel)

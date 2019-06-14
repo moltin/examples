@@ -13,12 +13,10 @@ export const markOrderAsShipped = (id): Promise<any> => new Promise((resolve, re
         shipping: 'fulfilled',
     })
         .then((result): any => {
-            console.log(result)
             resolve(result)
         })
    
         .catch((e): any => {
-            console.log(e)
             reject(e)
         })
 })

@@ -102,6 +102,12 @@ declare module "Types" {
         gift: boolean;
     }
 
+    export interface EmptyShipstationOrderObjects {
+        billTo: Object;
+        shipTo: Object;
+        items: Object;
+    }
+
     export type ShipstationFullOrder =  ShipstationOrderValues & ShipstationOrderObjects
 
     export interface ShipstationOrderObjects {
