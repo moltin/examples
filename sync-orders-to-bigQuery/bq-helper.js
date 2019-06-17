@@ -25,10 +25,10 @@ async function writeObjectUpdates(objects, table) {
       const file = fs.createWriteStream(`/tmp/${table}.json`, {
         flags: 'a',
       })
-      file.on('error', (err) => {
+      file.on('error', err => {
         console.error('error writeObjectUpdates', err)
       })
-      objects.forEach((v) => {
+      objects.forEach(v => {
         file.write(`${JSON.stringify(v)}\r\n`)
       })
       file.end()
@@ -40,7 +40,6 @@ async function writeObjectUpdates(objects, table) {
 }
 
 module.exports = {
-
   async createBigQueryClient() {
     bigquery = new BigQuery({
       projectId: process.env.GOOGLE_PROJECT_ID,
@@ -55,8 +54,11 @@ module.exports = {
   loadObjects(dataset, table) {
     return new Promise(async (resolve, reject) => {
       try {
-        await bigquery.dataset(dataset).table(table).load(`/tmp/${table}.json`)
-        fs.unlink(`/tmp/${table}.json`, (err) => {
+        await bigquery
+          .dataset(dataset)
+          .table(table)
+          .load(`/tmp/${table}.json`)
+        fs.unlink(`/tmp/${table}.json`, err => {
           if (err) throw err
           console.log(`${table}.json was deleted`)
         })
@@ -72,13 +74,15 @@ module.exports = {
         // Need to delete previous records of the orders and then update.
         let objectsToDelete = ''
         const objectsToInsert = []
-        objects.forEach((object) => {
+        objects.forEach(object => {
           objectsToDelete += `"${object.id}",`
           objectsToInsert.push(filterJson(object))
         })
-        resolve(deleteObjects(objectsToDelete, dataset, table).then(() => {
-          writeObjectUpdates(objectsToInsert, table)
-        }))
+        resolve(
+          deleteObjects(objectsToDelete, dataset, table).then(() => {
+            writeObjectUpdates(objectsToInsert, table)
+          })
+        )
       } catch (e) {
         reject(e)
       }
