@@ -24,7 +24,7 @@ git clone git@github.com:moltin/integration-examples.git
 Install dependencies with Yarn
 
 ```bash
-cd integration-examples/shipping-confirmation-sms
+cd integration-examples/sync-orders-to-bigQuery
 yarn
 ```
 
