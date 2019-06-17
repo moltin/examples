@@ -1,6 +1,6 @@
 const GoogleKMS = require('@google-cloud/kms').KeyManagementServiceClient
 
-const decrypt = async (ciphertext) => {
+const decrypt = async ciphertext => {
   const client = new GoogleKMS()
   const locationId = process.env.GOOGLE_LOCATION_ID
   const keyRingId = process.env.GOOGLE_KEYRING_ID
@@ -11,7 +11,7 @@ const decrypt = async (ciphertext) => {
     projectId,
     locationId,
     keyRingId,
-    cryptoKeyId,
+    cryptoKeyId
   )
 
   return new Promise(async (resolve, reject) => {
@@ -30,11 +30,14 @@ const decrypt = async (ciphertext) => {
   })
 }
 
-module.exports.decryptVars = async () => new Promise(async (resolve, reject) => {
-  try {
-    process.env.MOLTIN_CLIENT_SECRET = await decrypt(Buffer.from(process.env.MOLTIN_CLIENT_SECRET, 'base64'))
-    resolve()
-  } catch (e) {
-    reject(e)
-  }
-})
+module.exports.decryptVars = async () =>
+  new Promise(async (resolve, reject) => {
+    try {
+      process.env.MOLTIN_CLIENT_SECRET = await decrypt(
+        Buffer.from(process.env.MOLTIN_CLIENT_SECRET, 'base64')
+      )
+      resolve()
+    } catch (e) {
+      reject(e)
+    }
+  })
