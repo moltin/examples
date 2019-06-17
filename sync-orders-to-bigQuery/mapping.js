@@ -1,10 +1,11 @@
 module.exports = {
-  filterOrderJson(order) {
-    return {
+  filterOrderJson: order => ({
       id: order.id, // string
       created_at: order.meta.timestamps.created_at, // string
       updated_at: order.meta.timestamps.updated_at, // string
-      customer_id: order.relationships.customer ? order.relationships.customer.data.id : null, // string
+      customer_id: order.relationships.customer
+        ? order.relationships.customer.data.id
+        : null, // string
       customer_email: order.customer.email, // string
       payment: order.payment, // string
       shipping: order.shipping, // string
@@ -33,11 +34,9 @@ module.exports = {
       bill_to_county: order.billing_address.county, // string
       totals_raw_subtotal: order.meta.display_price.without_tax.amount, // float
       totals_raw_total: order.meta.display_price.with_tax.amount, // float
-    }
-  },
+  }),
 
-  filterItemJson(item) {
-    return {
+  filterItemJson: item => ({
       id: item.id, // string
       created_at: item.meta.timestamps.created_at, // string
       updated_at: item.meta.timestamps.updated_at, // string
@@ -49,6 +48,5 @@ module.exports = {
       total_retail: item.meta.display_price.without_tax.value.formatted, // string
       product_id: item.product_id, // string
       type: item.type, // string
-    }
-  },
+  }),
 }
