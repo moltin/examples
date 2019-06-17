@@ -1,5 +1,3 @@
-'use strict'
-
 const { MoltinClient } = require('@moltin/request')
 const moment = require('moment')
 const datahelper = require('./bq-helper')
@@ -8,7 +6,10 @@ const mapping = require('./mapping')
 
 async function getUpdatedOrders(moltin, date, offset = 0, limit = 1) {
   return new Promise(async (resolve, reject) => {
-    moltin.get(`orders?include=items&page[limit]=${limit}&filter=ge(updated_at,${date})&page[offset]=${offset}`)
+    moltin
+      .get(
+        `orders?include=items&page[limit]=${limit}&filter=ge(updated_at,${date})&page[offset]=${offset}`
+      )
       .then(resolve)
       .catch(reject)
   })
@@ -24,10 +25,14 @@ module.exports.updateOrders = async (request, response) => {
       client_secret: process.env.MOLTIN_CLIENT_SECRET,
     })
 
-    const date = moment().subtract(1, 'days').format('YYYY-MM-DD')
+    const date = moment()
+      .subtract(1, 'days')
+      .format('YYYY-MM-DD')
 
-    const limit = 100; let offset = 0; let resultSize = 0; let
-      result
+    const limit = 100
+    let offset = 0
+    let resultSize = 0
+    let result
 
     do {
       // Get Order Updates and delete older versions
@@ -40,23 +45,30 @@ module.exports.updateOrders = async (request, response) => {
           orders.data,
           mapping.filterOrderJson,
           process.env.ORDERS_DATASET,
-          process.env.ORDERS_TABLE,
+          process.env.ORDERS_TABLE
         )
 
         // Update items
         await datahelper.generateUpdates(
           orders.included.items,
-          mapping.filterItemJson, process.env.ORDERS_DATASET,
-          process.env.ORDER_ITEMS_TABLE,
+          mapping.filterItemJson,
+          process.env.ORDERS_DATASET,
+          process.env.ORDER_ITEMS_TABLE
         )
       } else {
         resultSize = -1
       }
     } while (resultSize === limit)
     // Load new Orders
-    await datahelper.loadObjects(process.env.ORDERS_DATASET, process.env.ORDERS_TABLE)
+    await datahelper.loadObjects(
+      process.env.ORDERS_DATASET,
+      process.env.ORDERS_TABLE
+    )
     // Load new Items
-    await datahelper.loadObjects(process.env.ORDERS_DATASET, process.env.ORDER_ITEMS_TABLE)
+    await datahelper.loadObjects(
+      process.env.ORDERS_DATASET,
+      process.env.ORDER_ITEMS_TABLE
+    )
 
     return response.status(200).send('success')
   } catch (e) {
