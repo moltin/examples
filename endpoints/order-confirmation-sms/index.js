@@ -1,6 +1,6 @@
 const { json, send } = require('micro')
 const cors = require('micro-cors')()
-const { createClient } = require('@moltin/request')
+const { MoltinClient } = require('@moltin/request')
 const twilio = require('twilio')
 
 const twilioClient = new twilio(
@@ -8,7 +8,7 @@ const twilioClient = new twilio(
   process.env.TWILIO_AUTH_TOKEN
 )
 
-const moltin = new createClient({
+const moltin = new MoltinClient({
   client_id: process.env.MOLTIN_CLIENT_ID,
   client_secret: MOLTIN_CLIENT_SECRET,
   application: 'example-order-confirmation-sms'
@@ -37,7 +37,7 @@ module.exports = cors(async (req, res) => {
     const body = await twilioClient.messages.create({
       to,
       from: process.env.TWILIO_FROM_NUMBER,
-      body: `Your order ${id} is on the way!`
+      body: `We've received your order. Your order reference is: ${id}`
     })
 
     send(res, 200, body)

@@ -2,10 +2,12 @@
   "alias": "demo-all-integrations",
   "version": 2,
   "env": {
+    "ALGOLIA_APP_ID": "@demo-algolia-app-id",
+    "ALGOLIA_API_KEY": "@demo-algolia-api-key",
     "TWILIO_ACCOUNT_SID": "@demo-twilio-account-sid",
     "TWILIO_AUTH_TOKEN": "@demo-twilio-auth-token",
     "TWILIO_FROM_NUMBER": "@demo-twilio-from-number",
-    "POSTMARK_KEY": "@demo-postmark-key",
+    "POSTMARK_API_KEY": "@demo-postmark-api-key",
     "POSTMARK_FROM_ADDRESS": "@demo-postmark-from-address",
     "POSTMARK_SHIPPED_TEMPLATE_ID": "@demo-postmark-shipped-template-id",
     "POSTMARK_CONFIRMATION_TEMPLATE_ID": "@demo-postmark-confirmation-template-id",
@@ -15,54 +17,34 @@
   },
   "builds": [
     {
-      "src": "order-confirmation-email/*.js",
-      "use": "@now/node"
-    },
-    {
-      "src": "order-confirmation-sms/*.js",
-      "use": "@now/node"
-    },
-    {
-      "src": "shipping-confirmation-email/*.js",
-      "use": "@now/node"
-    },
-    {
-      "src": "shipping-confirmation-sms/*.js",
-      "use": "@now/node"
-    },
-    {
-      "src": "short-order-id/*.js",
-      "use": "@now/node"
-    },
-    {
-      "src": "sync-catalog-to-algolia/*.js",
+      "src": "/endpoints/**/*.js",
       "use": "@now/node"
     }
   ],
   "routes": [
     {
       "src": "/order-confirmation-email",
-      "dest": "/order-confirmation-email",
+      "dest": "/endpoints/order-confirmation-email",
       "methods": ["POST"]
     },
     {
       "src": "/order-confirmation-sms",
-      "dest": "/order-confirmation-sms",
+      "dest": "/endpoints/order-confirmation-sms",
       "methods": ["POST"]
     },
     {
       "src": "/shipping-confirmation-email",
-      "dest": "/shipping-confirmation-email",
+      "dest": "/endpoints/shipping-confirmation-email",
       "methods": ["POST"]
     },
     {
       "src": "/shipping-confirmation-sms",
-      "dest": "/shipping-confirmation-sms",
+      "dest": "/endpoints/shipping-confirmation-sms",
       "methods": ["POST"]
     },
     {
       "src": "/short-order-id",
-      "dest": "/short-order-id",
+      "dest": "/endpoints/short-order-id",
       "methods": ["POST"]
     },
     {

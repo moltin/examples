@@ -1,9 +1,9 @@
 const { json, send } = require('micro')
 const cors = require('micro-cors')()
-const { createClient } = require('@moltin/request')
+const { MoltinClient } = require('@moltin/request')
 const cuid = require('cuid')
 
-const moltin = new createClient({
+const moltin = new MoltinClient({
   client_id: process.env.MOLTIN_CLIENT_ID,
   client_secret: MOLTIN_CLIENT_SECRET,
   application: 'example-short-order-id'

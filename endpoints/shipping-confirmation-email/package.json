@@ -1,11 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "dev": "micro-dev",
     "start": "micro"
-  },
-  "devDependencies": {
-    "micro-dev": "3.0.0"
   },
   "dependencies": {
     "micro": "9.3.4",
