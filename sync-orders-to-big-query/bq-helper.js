@@ -23,7 +23,7 @@ async function writeObjectUpdates(objects, table) {
     try {
       // insert updates
       const file = fs.createWriteStream(`/tmp/${table}.json`, {
-        flags: 'a'
+        flags: 'a',
       })
       file.on('error', err => {
         console.error('error writeObjectUpdates', err)
@@ -42,7 +42,7 @@ async function writeObjectUpdates(objects, table) {
 module.exports = {
   async createBigQueryClient() {
     bigquery = new BigQuery({
-      projectId: process.env.GOOGLE_PROJECT_ID
+      projectId: process.env.GOOGLE_PROJECT_ID,
     })
   },
 
@@ -99,5 +99,5 @@ module.exports = {
         reject(e)
       }
     })
-  }
+  },
 }

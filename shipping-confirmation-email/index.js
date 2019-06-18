@@ -20,8 +20,8 @@ module.exports = cors(async (req, res) => {
       data: {
         id,
         customer: { email: to, name },
-        shipping_address: { line_1, postcode }
-      }
+        shipping_address: { line_1, postcode },
+      },
     } = resource
 
     await postmark.sendEmailWithTemplate({
@@ -32,8 +32,8 @@ module.exports = cors(async (req, res) => {
         customer_name: name,
         order_ref: id,
         shipping_line_1: line_1,
-        shipping_postcode: postcode
-      }
+        shipping_postcode: postcode,
+      },
     })
 
     send(res, 201)

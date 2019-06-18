@@ -33,7 +33,7 @@ module.exports = {
     bill_to_city: order.billing_address.city, // string
     bill_to_county: order.billing_address.county, // string
     totals_raw_subtotal: order.meta.display_price.without_tax.amount, // float
-    totals_raw_total: order.meta.display_price.with_tax.amount // float
+    totals_raw_total: order.meta.display_price.with_tax.amount, // float
   }),
 
   filterItemJson: item => ({
@@ -47,6 +47,6 @@ module.exports = {
     unit_price: item.meta.display_price.without_tax.unit.formatted, // string
     total_retail: item.meta.display_price.without_tax.value.formatted, // string
     product_id: item.product_id, // string
-    type: item.type // string
-  })
+    type: item.type, // string
+  }),
 }

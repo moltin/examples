@@ -22,7 +22,7 @@ module.exports.updateOrders = async (request, response) => {
 
     const moltin = new MoltinClient({
       client_id: process.env.MOLTIN_CLIENT_ID,
-      client_secret: process.env.MOLTIN_CLIENT_SECRET
+      client_secret: process.env.MOLTIN_CLIENT_SECRET,
     })
 
     const date = moment()

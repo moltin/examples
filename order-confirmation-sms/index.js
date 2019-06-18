@@ -11,7 +11,7 @@ const twilioClient = new twilio(
 const moltin = new createClient({
   client_id: process.env.MOLTIN_CLIENT_ID,
   client_secret: MOLTIN_CLIENT_SECRET,
-  application: 'example-order-confirmation-sms'
+  application: 'example-order-confirmation-sms',
 })
 
 module.exports = cors(async (req, res) => {
@@ -24,20 +24,20 @@ module.exports = cors(async (req, res) => {
   const payload = await json(req)
 
   const {
-    data: { id }
+    data: { id },
   } = JSON.parse(payload.resources)
 
   try {
     // We need to make a call to Moltin to get number
     // as Flows aren't sent with the webhook
     const {
-      data: { phone_number: to }
+      data: { phone_number: to },
     } = await moltin.get(`orders/${id}`)
 
     const body = await twilioClient.messages.create({
       to,
       from: process.env.TWILIO_FROM_NUMBER,
-      body: `We've received your order. Your order reference is: ${id}`
+      body: `We've received your order. Your order reference is: ${id}`,
     })
 
     send(res, 200, body)

@@ -6,7 +6,7 @@ const cuid = require('cuid')
 const moltin = new createClient({
   client_id: process.env.MOLTIN_CLIENT_ID,
   client_secret: MOLTIN_CLIENT_SECRET,
-  application: 'example-short-order-id'
+  application: 'example-short-order-id',
 })
 
 module.exports = cors(async (req, res) => {
@@ -19,7 +19,7 @@ module.exports = cors(async (req, res) => {
   const payload = await json(req)
 
   const {
-    data: { id }
+    data: { id },
   } = JSON.parse(payload.resources)
 
   try {
@@ -27,7 +27,7 @@ module.exports = cors(async (req, res) => {
 
     await moltin.put(`orders/${id}`, {
       type: 'order',
-      short_id
+      short_id,
     })
 
     send(res, 200)

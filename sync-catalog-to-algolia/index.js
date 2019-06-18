@@ -28,7 +28,7 @@ module.exports = cors(async (req, res) => {
     }
 
     const {
-      data: { id: objectID, ...rest }
+      data: { id: objectID, ...rest },
     } = JSON.parse(resources)
     const object = { objectID, ...rest }
 
