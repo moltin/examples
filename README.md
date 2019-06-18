@@ -31,7 +31,7 @@ Integrate with Moltin using 3rd party services with AWS Lambda, Zeit Now, Netlif
 | [Shipping Confirmation via SMS](/shipping-confirmation-sms)     | [`@moltin/request`](https://github.com/moltin/moltin-request) | Shipping confirmation SMS via Twilio.                         |
 | [Short Order ID](/short-order-id)                               | [`@moltin/request`](https://github.com/moltin/moltin-request) | Assign a short random ID to new orders.                       |
 | [Sync catalog to Algolia](/sync-catalog-to-algolia)             | [`@moltin/request`](https://github.com/moltin/moltin-request) | Sync products, brands, categories and collections to Algolia. |
-| [Sync Orders to BigQuery](/sync-orders-to-big-query)            | [`@moltin/js-sdk`](https://github.com/moltin/js-sdk)          | Sync order + order items to Google BigQuery.                  |
+| [Sync Orders to BigQuery](/sync-orders-to-big-query)            | [`@moltin/request`](https://github.com/moltin/moltin-request) | Sync order + order items to Google BigQuery.                  |
 
 ## Misc
 
