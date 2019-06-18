@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-"@moltin/request@^2.0.1":
+"@moltin/request@2.0.1":
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/@moltin/request/-/request-2.0.1.tgz#8643f0cb1018092c2fa91721bd02d22a484cdbf5"
   integrity sha512-i4VG2+hWn+sAZvTP18SfTucawLMHGqEPZ4A+BGMSo8BYClM1x9DMulTX7bx03MsZoMJsADnGFfQkjHf6kMXExA==
@@ -158,7 +158,7 @@ cross-fetch@3.0.4:
     node-fetch "2.6.0"
     whatwg-fetch "3.0.0"
 
-cuid@^2.1.6:
+cuid@2.1.6:
   version "2.1.6"
   resolved "https://registry.yarnpkg.com/cuid/-/cuid-2.1.6.tgz#dc3a20b5a7497d36d32c0bf8a2997524c9c796c4"
   integrity sha512-ZFp7PS6cSYMJNch9fc3tyHdE4T8TDo3Y5qAxb0KSA9mpiYDo7z9ql1CznFuuzxea9STVIDy0tJWm2lYiX2ZU1Q==
@@ -406,12 +406,12 @@ lodash@^4.17.11:
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
   integrity sha512-cQKh8igo5QUhZ7lg38DYWAxMvjSAKG0A8wGSVimP07SIUEK2UO+arSRKbRZWtelMtN5V0Hkwh5ryOto/SshYIg==
 
-micro-cors@^0.1.1:
+micro-cors@0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/micro-cors/-/micro-cors-0.1.1.tgz#af7a480182c114ffd1ada84ad9dffc52bb4f4054"
   integrity sha512-6WqIahA5sbQR1Gjexp1VuWGFDKbZZleJb/gy1khNGk18a6iN1FdTcr3Q8twaxkV5H94RjxIBjirYbWCehpMBFw==
 
-micro@^9.3.4:
+micro@9.3.4:
   version "9.3.4"
   resolved "https://registry.yarnpkg.com/micro/-/micro-9.3.4.tgz#745a494e53c8916f64fb6a729f8cbf2a506b35ad"
   integrity sha512-smz9naZwTG7qaFnEZ2vn248YZq9XR+XoOH3auieZbkhDL4xLOxiE+KqG8qqnBeKfXA9c1uEFGCxPN1D+nT6N7w==
@@ -463,7 +463,7 @@ pop-iterate@^1.0.1:
   resolved "https://registry.yarnpkg.com/pop-iterate/-/pop-iterate-1.0.1.tgz#ceacfdab4abf353d7a0f2aaa2c1fc7b3f9413ba3"
   integrity sha1-zqz9q0q/NT16DyqqLB/Hs/lBO6M=
 
-postmark@^2.2.6:
+postmark@2.2.6:
   version "2.2.6"
   resolved "https://registry.yarnpkg.com/postmark/-/postmark-2.2.6.tgz#297bb136459a161a12abdb4678c3a053d9b92a22"
   integrity sha512-q0HMJm96y/3Pkbds9FRNbmNYTxr9oWwtbzX6LhP906v+2WwrIx/adST5yX9jGhMpO9oFTv9na5S1i+jJj9XlSg==
@@ -605,7 +605,7 @@ tweetnacl@^0.14.3, tweetnacl@~0.14.0:
   resolved "https://registry.yarnpkg.com/tweetnacl/-/tweetnacl-0.14.5.tgz#5ae68177f192d4456269d108afa93ff8743f4f64"
   integrity sha1-WuaBd/GS1EViadEIr6k/+HQ/T2Q=
 
-twilio@^3.32.0:
+twilio@3.32.0:
   version "3.32.0"
   resolved "https://registry.yarnpkg.com/twilio/-/twilio-3.32.0.tgz#f2a25ea90b8bebabf98610f71517d26cfa7bdf86"
   integrity sha512-6SII8R7y9GDzoZK0NRMwohSqHvEhOdT2lBBp6oQ0NlzetbP0xewCIf0XpxmucOqxJjoPit4tfO/vO+r2K18sVg==
