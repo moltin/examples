@@ -1,5 +1,5 @@
 {
-  "alias": "demo-all-integrations",
+  "alias": "moltin-integration-examples.now.sh",
   "version": 2,
   "env": {
     "ALGOLIA_APP_ID": "@demo-algolia-app-id",
