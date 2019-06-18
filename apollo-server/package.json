@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "node index.js"
+  },
+  "dependencies": {
+    "@moltin/request": "latest",
+    "apollo-server": "latest",
+    "graphql": "latest"
+  }
+}

@@ -23,22 +23,22 @@ Discover how to connect popular frontend frameworks and static site generators w
 
 Integrate with Moltin using 3rd party services with AWS Lambda, Zeit Now, Netlify Functions & more.
 
-| Example                                                         | Description                                                   |
-| --------------------------------------------------------------- | ------------------------------------------------------------- |
-| [Order Confirmation via Email](/order-confirmation-email)       | Order confirmation email with Postmark.                       |
-| [Order Confirmation via SMS](/order-confirmation-sms)           | Order confirmation SMS via Twilio.                            |
-| [Shipping Confirmation via Email](/shipping-confirmation-email) | Shipping confirmation email with Postmark.                    |
-| [Shipping Confirmation via SMS](/shipping-confirmation-sms)     | Shipping confirmation SMS via Twilio.                         |
-| [Short Order ID](/short-order-id)                               | Assign a short random ID to new orders.                       |
-| [Sync catalog to Algolia](/sync-catalog-to-algolia)             | Sync products, brands, categories and collections to Algolia. |
-| [Sync Orders to BigQuery](/sync-orders-to-big-query)            | Sync order + order items to Google BigQuery.                  |
+| Example                                                         | SDK                                                           | Description                                                   |
+| --------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- |
+| [Order Confirmation via Email](/order-confirmation-email)       | [`@moltin/request`](https://github.com/moltin/moltin-request) | Order confirmation email with Postmark.                       |
+| [Order Confirmation via SMS](/order-confirmation-sms)           | [`@moltin/request`](https://github.com/moltin/moltin-request) | Order confirmation SMS via Twilio.                            |
+| [Shipping Confirmation via Email](/shipping-confirmation-email) | [`@moltin/request`](https://github.com/moltin/moltin-request) | Shipping confirmation email with Postmark.                    |
+| [Shipping Confirmation via SMS](/shipping-confirmation-sms)     | [`@moltin/request`](https://github.com/moltin/moltin-request) | Shipping confirmation SMS via Twilio.                         |
+| [Short Order ID](/short-order-id)                               | [`@moltin/request`](https://github.com/moltin/moltin-request) | Assign a short random ID to new orders.                       |
+| [Sync catalog to Algolia](/sync-catalog-to-algolia)             | [`@moltin/request`](https://github.com/moltin/moltin-request) | Sync products, brands, categories and collections to Algolia. |
+| [Sync Orders to BigQuery](/sync-orders-to-big-query)            | [`@moltin/js-sdk`](https://github.com/moltin/js-sdk)          | Sync order + order items to Google BigQuery.                  |
 
 ## Misc
 
 | Example                         | Demo                                                                                 | Description                           |
 | ------------------------------- | ------------------------------------------------------------------------------------ | ------------------------------------- |
 | [Apollo Server](/apollo-server) | [https://apollo-server-demo.moltin.now.sh](https://apollo-server-demo.moltin.now.sh) | An example GraphQL server with Moltin |
-| [CLI](/cli)                     |                                                                                      | An example CLI that queries products  |
+| [CLI](/cli-app)                 |                                                                                      | An example CLI that queries products  |
 
 ## Reference implementations
 
