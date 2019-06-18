@@ -17,34 +17,34 @@
   },
   "builds": [
     {
-      "src": "/endpoints/**/*.js",
+      "src": "/**/*.js",
       "use": "@now/node"
     }
   ],
   "routes": [
     {
       "src": "/order-confirmation-email",
-      "dest": "/endpoints/order-confirmation-email",
+      "dest": "/order-confirmation-email",
       "methods": ["POST"]
     },
     {
       "src": "/order-confirmation-sms",
-      "dest": "/endpoints/order-confirmation-sms",
+      "dest": "/order-confirmation-sms",
       "methods": ["POST"]
     },
     {
       "src": "/shipping-confirmation-email",
-      "dest": "/endpoints/shipping-confirmation-email",
+      "dest": "/shipping-confirmation-email",
       "methods": ["POST"]
     },
     {
       "src": "/shipping-confirmation-sms",
-      "dest": "/endpoints/shipping-confirmation-sms",
+      "dest": "/shipping-confirmation-sms",
       "methods": ["POST"]
     },
     {
       "src": "/short-order-id",
-      "dest": "/endpoints/short-order-id",
+      "dest": "/short-order-id",
       "methods": ["POST"]
     },
     {
