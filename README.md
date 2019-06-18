@@ -8,6 +8,8 @@ Here you will find example demo stores and serverless functions that can be used
 
 ### Storefronts
 
+Discover how to connect popular frontend frameworks and static site generators with Moltin.
+
 | Example             | Demo                                                                                 | Description                             |
 | ------------------- | ------------------------------------------------------------------------------------ | --------------------------------------- |
 | [Gatsby](/nextjs)   | [https://gatsby-demo-store.moltin.now.sh](https://gatsby-demo-store.moltin.now.sh)   | An example store using Gatsby           |
