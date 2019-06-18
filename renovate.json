@@ -3,5 +3,6 @@
   "automerge": true,
   "major": {
     "automerge": false
-  }
+  },
+  "reviewers": ["notrab", "ynnoj"]
 }
