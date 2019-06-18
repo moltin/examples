@@ -1,21 +1,25 @@
 # Moltin Examples
 
+[![Join us on Spectrum](https://withspectrum.github.io/badge/badge.svg)](https://spectrum.chat/moltin)
+
 Here you will find example demo stores and serverless functions that can be used with [Moltin webhooks](https://docs.moltin.com/advanced/events).
 
 **They are not to be treated as production-ready.**
 
 ### Storefronts
 
-| Example             | Demo                                       | Description                             |
-| ------------------- | ------------------------------------------ | --------------------------------------- |
-| [Gatsby](/nextjs)   | [https://gatsby-demo-store.moltin.now.sh]  | An example store using Gatsby           |
-| [Next.js](/nextjs)  | [https://nextjs-demo-store.moltin.now.sh]  | An example store using Next.js          |
-| [React](/react)     | [https://react-demo-store.moltin.now.sh]   | An example store using Create React App |
-| [Nuxt.js](/nuxtjs)  | [https://nuxt-demo-store.moltin.now.sh]    | An example store using Nuxt.js          |
-| [Vue](/vue)         | [https://vue-demo-store.moltin.now.sh]     | An example store using Vue              |
-| [Express](/express) | [https://express-demo-store.moltin.now.sh] | An example store using Express          |
+| Example             | Demo                                                                                 | Description                             |
+| ------------------- | ------------------------------------------------------------------------------------ | --------------------------------------- |
+| [Gatsby](/nextjs)   | [https://gatsby-demo-store.moltin.now.sh](https://gatsby-demo-store.moltin.now.sh)   | An example store using Gatsby           |
+| [Next.js](/nextjs)  | [https://nextjs-demo-store.moltin.now.sh](https://nextjs-demo-store.moltin.now.sh)   | An example store using Next.js          |
+| [React](/react)     | [https://react-demo-store.moltin.now.sh](https://react-demo-store.moltin.now.sh)     | An example store using Create React App |
+| [Nuxt.js](/nuxtjs)  | [https://nuxt-demo-store.moltin.now.sh](https://nuxt-demo-store.moltin.now.sh)       | An example store using Nuxt.js          |
+| [Vue](/vue)         | [https://vue-demo-store.moltin.now.sh](https://vue-demo-store.moltin.now.sh)         | An example store using Vue              |
+| [Express](/express) | [https://express-demo-store.moltin.now.sh](https://express-demo-store.moltin.now.sh) | An example store using Express          |
 
 ### Webhooks (aka "integrations")
+
+Integrate with Moltin using 3rd party services with AWS Lambda, Zeit Now, Netlify Functions & more.
 
 | Example                                                         | Description                                                   |
 | --------------------------------------------------------------- | ------------------------------------------------------------- |
