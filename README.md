@@ -16,3 +16,4 @@ Examples in this repo are designed to contain the least amount of code to demons
 | [Shipping Confirmation via SMS](/shipping-confirmation-sms)     | `order.fulfilled` | Shipping confirmation SMS via Twilio.                         |
 | [Short Order ID](/short-order-id)                               | `order.created`   | Assign a short random ID to new orders.                       |
 | [Sync catalog to Algolia](/sync-catalog-to-algolia)             | Multiple          | Sync products, brands, categories and collections to Algolia. |
+| [Sync Orders to BigQuery](/sync-orders-to-big-query)            | None              | Sync order + order items to Google BigQuery.                  |
