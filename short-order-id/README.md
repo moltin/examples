@@ -29,7 +29,7 @@ Moltin provides you the ability to extend core resources with the Flows feature.
 
 Here you will want to create a new Flow (or edit if it already exists) for extending Orders. Give it a name and description you will recognise, but **make sure** the `slug` is set to `orders`.
 
-![Create New Flow](http://s.csssr.ru/U31J879TR/flow-orders.jpg)
+![Create New Flow](https://user-images.githubusercontent.com/20782623/59868786-69c0cb00-939a-11e9-87dc-3f129702de24.jpg)
 
 Next you will want to create a new Field for the Flow you just created.
 
