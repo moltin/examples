@@ -2,13 +2,13 @@
 # yarn lockfile v1
 
 
-"@google-cloud/bigquery@4.1.4":
-  version "4.1.4"
-  resolved "https://registry.yarnpkg.com/@google-cloud/bigquery/-/bigquery-4.1.4.tgz#df1c7ba7af4780e516e38852cc8af618c6ecdcfb"
-  integrity sha512-sapekMbbNbdNNC8FI4xOCA5oMXwJr1WTF6l5AVHXpJrAgSshE8GqgVMYw54zLi/QsbNWtYomjo8g3K4indDbsA==
+"@google-cloud/bigquery@4.1.5":
+  version "4.1.5"
+  resolved "https://registry.yarnpkg.com/@google-cloud/bigquery/-/bigquery-4.1.5.tgz#e608c51ecfd3f5dacd1a34c9e91695f7139067db"
+  integrity sha512-dCUmc+KYdEl7naTV8MYVBCZvOchgk4rMa0aTjPhf17VJuTg8PKbl/lNDxhe7oe0CBBMPIPtFwe6clLPZhcsx7g==
   dependencies:
     "@google-cloud/common" "^2.0.0"
-    "@google-cloud/paginator" "^1.0.0"
+    "@google-cloud/paginator" "^2.0.0"
     "@google-cloud/promisify" "^1.0.0"
     arrify "^2.0.1"
     big.js "^5.2.2"
@@ -42,15 +42,13 @@
   dependencies:
     google-gax "^1.0.0"
 
-"@google-cloud/paginator@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@google-cloud/paginator/-/paginator-1.0.0.tgz#35549a463fd7072a3caf550e79d28d88a24af3f3"
-  integrity sha512-U0Pa2k05mZlRmIGTl81VBv+cYbGsg3E/+IeNasUSk1EisC0fADSwB/o8QJ9yL0knUEAVzOEyErPXnvbMq0IM6w==
+"@google-cloud/paginator@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@google-cloud/paginator/-/paginator-2.0.0.tgz#187af93634341e79cf1d41dccde5c9082508a0f2"
+  integrity sha512-droVsitvSUGSoMV7Hbk2B5dCFkZIz9YNu3D1AxgFh+hmbSEWJ9SgB/M3WrU8CUx3pseH7IbLuq8jgs3HEFzeHw==
   dependencies:
     arrify "^2.0.0"
     extend "^3.0.1"
-    split-array-stream "^2.0.0"
-    stream-events "^1.0.4"
 
 "@google-cloud/projectify@^1.0.0":
   version "1.0.0"
@@ -860,14 +858,7 @@ serverless-google-cloudfunctions@*:
     googleapis "^32.0.0"
     lodash "^4.17.4"
 
-split-array-stream@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/split-array-stream/-/split-array-stream-2.0.0.tgz#85a4f8bfe14421d7bca7f33a6d176d0c076a53b1"
-  integrity sha512-hmMswlVY91WvGMxs0k8MRgq8zb2mSen4FmDNc5AFiTWtrBpdZN6nwD6kROVe4vNL+ywrvbCKsWVCnEd4riELIg==
-  dependencies:
-    is-stream-ended "^0.1.4"
-
-stream-events@^1.0.4, stream-events@^1.0.5:
+stream-events@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/stream-events/-/stream-events-1.0.5.tgz#bbc898ec4df33a4902d892333d47da9bf1c406d5"
   integrity sha512-E1GUzBSgvct8Jsb3v2X15pjzN1tYebtbLaMg+eBOUOAxgbLoSbT2NS91ckc5lJD1KfLjId+jXJRgo0qnV5Nerg==
