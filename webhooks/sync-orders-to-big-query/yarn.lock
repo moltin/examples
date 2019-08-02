@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@google-cloud/bigquery@4.1.7":
-  version "4.1.7"
-  resolved "https://registry.yarnpkg.com/@google-cloud/bigquery/-/bigquery-4.1.7.tgz#1a13fd390a0f1b866f3b3ecececc0edaf1aefe84"
-  integrity sha512-aiJQZ7DQdo2ZNpbPQZpS2VwsPOkjwBUtnuXOTDm80FoCYsKdImrCC/FsMfzYtep+4bBieh5dwRpSSAn9CvUfkg==
+"@google-cloud/bigquery@4.1.8":
+  version "4.1.8"
+  resolved "https://registry.yarnpkg.com/@google-cloud/bigquery/-/bigquery-4.1.8.tgz#a2ff3096e00b6d56e0e75ee14603663a41376800"
+  integrity sha512-O6IJlAY4yr35LAz69b238naC2YIjUpiaW2aU4N9OisSQPsBs11YqjkHbgOvxWGbLLPRVCYZZ8ZIpoHjVu4m8gQ==
   dependencies:
     "@google-cloud/common" "^2.0.0"
     "@google-cloud/paginator" "^2.0.0"
