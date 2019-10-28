@@ -35,12 +35,12 @@
     retry-request "^4.0.0"
     teeny-request "^4.0.0"
 
-"@google-cloud/kms@1.5.0":
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/@google-cloud/kms/-/kms-1.5.0.tgz#531be34215fe487f8f64a3b9aa39e8adaced8763"
-  integrity sha512-wri16vzbAKVPOCjWJcLQ5pKMjQxu+UMYl1NwnCJeCiVef6EWnHb6Pbkk6/htTMX3lYL6qUsUcvqflo38Df7lUQ==
+"@google-cloud/kms@1.5.1":
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/@google-cloud/kms/-/kms-1.5.1.tgz#5c6dd6084a04d0e6819702618f0be310f898ac39"
+  integrity sha512-IvrmgD9pUrayL6/CRKMoilMpBKNA5npLU0v4FaekT+DntCZHD6zr3lEZvY/KcUGIQ15yrQc2vDvmtxFW/RXK8A==
   dependencies:
-    google-gax "^1.6.3"
+    google-gax "^1.7.5"
 
 "@google-cloud/paginator@^2.0.0":
   version "2.0.0"
@@ -507,7 +507,7 @@ google-auth-library@^5.0.0:
     jws "^3.1.5"
     lru-cache "^5.0.0"
 
-google-gax@^1.6.3:
+google-gax@^1.7.5:
   version "1.7.5"
   resolved "https://registry.yarnpkg.com/google-gax/-/google-gax-1.7.5.tgz#bc462d378536e14eae8b78d5f195c4173c4893ce"
   integrity sha512-Tz2DFs8umzDcCBTi2W1cY4vEgAKaYRj70g6Hh/MiiZaJizrly7PgyxsIYUGi7sOpEuAbARQymYKvy5mNi8hEbg==
