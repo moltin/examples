@@ -1525,10 +1525,10 @@ posix-character-classes@^0.1.0:
   resolved "https://registry.yarnpkg.com/posix-character-classes/-/posix-character-classes-0.1.1.tgz#01eac0fe3b5af71a2a6c02feabb8c1fef7e00eab"
   integrity sha1-AerA/jta9xoqbAL+q7jB/vfgDqs=
 
-postmark@2.3.1:
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/postmark/-/postmark-2.3.1.tgz#2294118fd70d65b421fe814fc20021d4bc1871af"
-  integrity sha512-nXnoNYU4VX3MG4VwqVPiucXZyU5iNnjRmUXZ6w+bo8pzgx0B9bFZMZsDQcaIyP8qmpd94/fAv/2fixgj3KH2Eg==
+postmark@2.3.2:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/postmark/-/postmark-2.3.2.tgz#36c3d0a51b72e26139a969b36085e83d5118b38c"
+  integrity sha512-0b1QanTOixudMAqTRwYRGtEdZXpefscdzkYhgq+VMZnCAR6Hp9aRD6715taC274Ix6LpFHPUeb25o1BW+lSsaQ==
   dependencies:
     request "^2.88.0"
 
