@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@moltin/request": "1.6.2",
-    "cuid": "2.1.6",
+    "cuid": "2.1.8",
     "micro": "9.3.4",
     "micro-cors": "0.1.1"
   }
