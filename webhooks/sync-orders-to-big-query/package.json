@@ -4,7 +4,7 @@
     "serverless-google-cloudfunctions": "*"
   },
   "dependencies": {
-    "@google-cloud/bigquery": "4.6.1",
+    "@google-cloud/bigquery": "4.7.0",
     "@google-cloud/kms": "1.6.2",
     "@moltin/request": "2.0.1",
     "fs": "0.0.2",
