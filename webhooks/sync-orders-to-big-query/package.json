@@ -5,7 +5,7 @@
   },
   "dependencies": {
     "@google-cloud/bigquery": "4.7.0",
-    "@google-cloud/kms": "1.6.2",
+    "@google-cloud/kms": "1.6.3",
     "@moltin/request": "2.0.1",
     "fs": "0.0.2",
     "moment": "2.24.0",
