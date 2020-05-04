@@ -1345,10 +1345,10 @@ posix-character-classes@^0.1.0:
   resolved "https://registry.yarnpkg.com/posix-character-classes/-/posix-character-classes-0.1.1.tgz#01eac0fe3b5af71a2a6c02feabb8c1fef7e00eab"
   integrity sha1-AerA/jta9xoqbAL+q7jB/vfgDqs=
 
-postmark@2.5.1:
-  version "2.5.1"
-  resolved "https://registry.yarnpkg.com/postmark/-/postmark-2.5.1.tgz#c86569027665f0a646ba936fdbb258066fd6b58b"
-  integrity sha512-zOJ0wKtrBajhwCkoPSleEAA8QAmNaSVAKVH5BqmbQloA//pKLY4TI0tbdlLC5nh/K8luzxfi1uBIKORsVY/4fA==
+postmark@2.5.2:
+  version "2.5.2"
+  resolved "https://registry.yarnpkg.com/postmark/-/postmark-2.5.2.tgz#517187b2c5f25989ef99cb73dac4b250acb11967"
+  integrity sha512-CJb+4/HyL3pWDodJMXn/JPWPayIedK/LvnNAL17DXLE0mDgMhBNsm3NR+HSgHWcikGmo2Sj0zG+tiWf3oeqefw==
   dependencies:
     axios "^0.19.2"
 
