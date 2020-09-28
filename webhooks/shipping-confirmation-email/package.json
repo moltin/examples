@@ -10,6 +10,6 @@
   "dependencies": {
     "micro": "9.3.4",
     "micro-cors": "0.1.1",
-    "postmark": "2.5.5"
+    "postmark": "2.5.6"
   }
 }
