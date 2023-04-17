@@ -7,7 +7,7 @@
     "@moltin/request": "^1.4.3",
     "micro": "^9.3.3",
     "micro-cors": "^0.1.1",
-    "twilio": "^3.28.0"
+    "twilio": "^4.0.0"
   },
   "devDependencies": {
     "micro-dev": "3.1.0"
