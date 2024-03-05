@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "@moltin/request": "^1.4.3",
+    "@moltin/request": "^2.0.0",
     "micro": "^9.3.3",
     "micro-cors": "^0.1.1",
     "twilio": "^3.28.0"
