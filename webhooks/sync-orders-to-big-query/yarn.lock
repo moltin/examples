@@ -75,10 +75,10 @@
     lodash.camelcase "^4.3.0"
     protobufjs "^6.8.6"
 
-"@moltin/request@2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@moltin/request/-/request-2.0.1.tgz#8643f0cb1018092c2fa91721bd02d22a484cdbf5"
-  integrity sha512-i4VG2+hWn+sAZvTP18SfTucawLMHGqEPZ4A+BGMSo8BYClM1x9DMulTX7bx03MsZoMJsADnGFfQkjHf6kMXExA==
+"@moltin/request@2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@moltin/request/-/request-2.0.2.tgz#aec1c4de2bfb5a6d465ee615b509483262019207"
+  integrity sha512-+ulHabpFp//lNXpVt2JM+jX6cC2rQ9AAo5slSuIWa2/xrzdbbYYx1QFE4Z9neoWrCCz5RX7OC2CTBM8/wd98EA==
   dependencies:
     cross-fetch "3.0.4"
 
