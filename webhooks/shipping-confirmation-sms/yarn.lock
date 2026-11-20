@@ -670,10 +670,10 @@ micro-dev@3.1.0:
     pretty-error "4.0.0"
     string-length "2.0.0"
 
-micro@^9.3.3:
-  version "9.4.1"
-  resolved "https://registry.yarnpkg.com/micro/-/micro-9.4.1.tgz#3a7eedd96718d8569a324475cd1967441df4b3c7"
-  integrity sha512-Lpjcbp6Y9GJIfewxDfTmu9eW0rt0MGo+Gs1d3yJLFa7mhErtKkCngGhDbA/O1gqUjEwsHh+jWPg8BJ0Bx4AgFA==
+micro@^10.0.0:
+  version "10.0.2"
+  resolved "https://registry.yarnpkg.com/micro/-/micro-10.0.2.tgz#a26b522d8b6a544256ca23955162604a2190e4ef"
+  integrity sha512-6Cz6XyckV9e5NnlNi6GSJteIQNpDq2wnzpuy3/VQ8zvy/W/B25b2jmvT947TgBbSRbSFdTmLK3v4HuU15xGDoQ==
   dependencies:
     arg "4.1.0"
     content-type "1.0.4"
